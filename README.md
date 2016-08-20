@@ -1,10 +1,14 @@
 # koishi.py
 
-Script for generating an SVG file with paths that resemble Koishi's "Genetics of the Subconscious" spell card.
+Python 3 script for generating an SVG file with paths that resemble Koishi's "Genetics of the Subconscious" spell card.
 
 ## Dependencies
 
 `svgwrite`
+
+## Instructions
+
+Make any modifications to the parameters as desired, then simply run `koishi.py` with Python 3.
 
 ## Overview
 
@@ -14,11 +18,7 @@ The "speeds" of each trajectory can be adjusted, as well as how much of the arbi
 
 In the future, I might implement having these parameters being read froma YAML file. Right now, they should be editted from within the script (`ELLIPSE_SCALE`, `PARENT_SCALE`, `nodes` in `main`).
 
-## Known issues
-
-The "time" parameter used in the nodes supplied to the `InterpolatedTrajectory` constructor do not behave as documented. This means it is not currently possible to have a trajectory fully stop at a certain point for an arbitrary amount of time.
-
-This will be fixed eventually. I just wanted to upload an older version that has this "bug" but is known to work.
+An older version where the "time" parameter behaves differently has been included for completion's sake, since it generates slightly different output.
 
 ## After running the script
 
