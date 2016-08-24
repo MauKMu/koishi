@@ -1,6 +1,6 @@
 # koishi.py
 
-Python 3 script for generating an SVG file with paths that resemble Koishi's "Genetics of the Subconscious" spell card.
+Python 3 script for generating an SVG file with paths that resemble Koishi's "Genetics of the Subconscious" spell card from Touhou 11.
 
 ## Dependencies
 
@@ -25,6 +25,8 @@ An older version where the "time" parameter behaves differently has been include
 # Example output
 
 An example of an output where the parent point follows a heart-shaped trajectory is included in `img/example_output.svg`. Below are two rasterized versions, one of which is rotated to its "correct" orientation.
+
+These images were generated with `ELLIPSE_SCALE = 2 * PI`, `PARENT_SCALE = 2` and `nodes = 200 * 15`.
 
 ![Rasterized](img/example_raster.png)
 
